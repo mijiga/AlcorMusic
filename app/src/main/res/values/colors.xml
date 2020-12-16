@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#4240bd</color>
+    <color name="colorPrimary">#4240bd</color>
+    <color name="colorPrimaryVariant">#00188c</color>
+    <color name="colorSecondary">#f653a6</color>
+    <color name="colorSecondaryDark">#f653a6</color>
+    <color name="colorPageBackground">#f5f8ff</color>
+    <color name="colorPrimaryText">#040c17</color>
+    <color name="rippleColor">#80F653A6</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="subText2">#a9a9a9</color>
+    <color name="subText">#757575</color>
+
+    <color name="creditBgColor">#334240BD</color>
+    <color name="creditTintColor">#4240BD</color>
+
+    <color name="debitBgColor">#4DFF8800</color>
+    <color name="debitTintColor">#FF8800</color>
+
+
+</resources>
