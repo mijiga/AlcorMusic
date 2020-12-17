@@ -3,8 +3,23 @@ package com.alcor.music.model;
 public class Artist {
 
     private String artistID, name, thumbnail, bio, genre, genreID;
-    private int rating, subscribers;
+    private int subscribers;
+    private double rating;
 
+    public Artist() {
+
+    }
+
+    public Artist(String artistID, String name, String thumbnail, String bio, String genre, String genreID, double rating, int subscribers) {
+        this.artistID = artistID;
+        this.name = name;
+        this.thumbnail = thumbnail;
+        this.bio = bio;
+        this.genre = genre;
+        this.genreID = genreID;
+        this.rating = rating;
+        this.subscribers = subscribers;
+    }
 
     public String getArtistID() {
         return artistID;
@@ -54,11 +69,11 @@ public class Artist {
         this.genreID = genreID;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 

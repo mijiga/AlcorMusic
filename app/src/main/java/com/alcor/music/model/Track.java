@@ -7,6 +7,29 @@ public class Track {
     private double duration, rating;
     private int downloadCount;
 
+    public Track() {
+
+    }
+
+    public Track(String trackID, String title, String artistID, String artistName,
+                 String description, String thumbnail, String uploadDate, String releaseDate,
+                 String genre, String genreID, String trackNumber, double duration, double rating,
+                 int downloadCount) {
+        this.trackID = trackID;
+        this.title = title;
+        this.artistID = artistID;
+        this.artistName = artistName;
+        this.description = description;
+        this.thumbnail = thumbnail;
+        this.uploadDate = uploadDate;
+        this.releaseDate = releaseDate;
+        this.genre = genre;
+        this.genreID = genreID;
+        this.trackNumber = trackNumber;
+        this.duration = duration;
+        this.rating = rating;
+        this.downloadCount = downloadCount;
+    }
 
     public String getTrackID() {
         return trackID;

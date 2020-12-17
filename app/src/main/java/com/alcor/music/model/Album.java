@@ -7,6 +7,26 @@ public class Album {
     private int downloadCount, price;
     private double rating;
 
+    public Album() {
+
+    }
+
+    public Album(String albumID, String name, String artistID, String artistName, String uploadDate, String releaseDate, String thumbnail, String description, String genre, String genreID, int downloadCount, int price, double rating) {
+        this.albumID = albumID;
+        this.name = name;
+        this.artistID = artistID;
+        this.artistName = artistName;
+        this.uploadDate = uploadDate;
+        this.releaseDate = releaseDate;
+        this.thumbnail = thumbnail;
+        this.description = description;
+        this.genre = genre;
+        this.genreID = genreID;
+        this.downloadCount = downloadCount;
+        this.price = price;
+        this.rating = rating;
+    }
+
     public String getAlbumID() {
         return albumID;
     }
