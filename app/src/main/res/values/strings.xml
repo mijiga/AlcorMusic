@@ -17,6 +17,8 @@
     <string name="search">search</string>
     <string name="checkout">Checkout</string>
     <string name="pay_using">Pay Using</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="tracklist">TRACKLIST</string>
 
     <string-array name="paymentmethods">
         <item id="airtel">Airtel Money</item>

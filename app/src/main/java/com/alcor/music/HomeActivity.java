@@ -2,9 +2,11 @@ package com.alcor.music;
 
 import android.os.Bundle;
 
+import com.alcor.music.ui.viewmodel.AlbumViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -12,10 +14,18 @@ import androidx.navigation.ui.NavigationUI;
 
 public class HomeActivity extends AppCompatActivity {
 
+    AlbumViewModel albumViewModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        albumViewModel = new ViewModelProvider(this).get(AlbumViewModel.class);
+        albumViewModel.getAlbums().observe(this, albums -> {
+
+        });
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

@@ -35,6 +35,7 @@
                 app:cardCornerRadius="12dp"
                 app:cardElevation="0.4dp">
                 <ImageView
+                    android:id="@+id/thumbnail"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
@@ -55,10 +56,11 @@
                 android:elevation="2dp">
 
                 <TextView
+                    android:id="@+id/title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="The Book of Eli"
+                    tools:text="The Book of Eli"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -73,7 +75,7 @@
                         android:id="@+id/buy"
                         android:layout_width="160dp"
                         android:layout_height="50dp"
-                        android:text="Buy Now"
+                        android:text="@string/buy_now"
                         android:textAllCaps="false"
                         android:textAlignment="viewStart"
                         app:backgroundTint="@color/colorSecondary"
@@ -108,7 +110,7 @@
             android:layout_marginTop="8dp"
             android:textSize="12sp"
             android:textColor="@color/subText2"
-            android:text="TRACKLIST"/>
+            android:text="@string/tracklist"/>
 
         <ScrollView
             android:layout_width="match_parent"

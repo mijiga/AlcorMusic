@@ -27,7 +27,7 @@ public class AlbumViewModel extends AndroidViewModel {
     
     public AlbumViewModel(@NonNull Application application) {
         super(application);
-        
+        //albumList.clear();
     }
 
     public LiveData<ArrayList<Album>> getAlbums(){

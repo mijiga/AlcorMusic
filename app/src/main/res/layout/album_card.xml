@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:id="@+id/album1"
-    android:layout_width="180dp"
+    android:layout_width="160dp"
     android:layout_height="200dp"
     android:layout_weight="1"
     android:layout_marginHorizontal="8dp"

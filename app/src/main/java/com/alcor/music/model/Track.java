@@ -2,7 +2,7 @@ package com.alcor.music.model;
 
 public class Track {
 
-    private String trackID, title, artistID, artistName, description, thumbnail, uploadDate,
+    private String trackID, title, artistID, artistName, albumID, albumName, description, thumbnail, uploadDate,
             releaseDate, genre, genreID, trackNumber;
     private double duration, rating;
     private int downloadCount;
@@ -12,13 +12,15 @@ public class Track {
     }
 
     public Track(String trackID, String title, String artistID, String artistName,
-                 String description, String thumbnail, String uploadDate, String releaseDate,
+                 String albumID, String albumName,String description, String thumbnail, String uploadDate, String releaseDate,
                  String genre, String genreID, String trackNumber, double duration, double rating,
                  int downloadCount) {
         this.trackID = trackID;
         this.title = title;
         this.artistID = artistID;
         this.artistName = artistName;
+        this.albumID = albumID;
+        this.albumName = albumName;
         this.description = description;
         this.thumbnail = thumbnail;
         this.uploadDate = uploadDate;
@@ -61,6 +63,22 @@ public class Track {
 
     public void setArtistName(String artistName) {
         this.artistName = artistName;
+    }
+
+    public String getAlbumID() {
+        return albumID;
+    }
+
+    public void setAlbumID(String albumID) {
+        this.albumID = albumID;
+    }
+
+    public String getAlbumName() {
+        return albumName;
+    }
+
+    public void setAlbumName(String albumName) {
+        this.albumName = albumName;
     }
 
     public String getDescription() {
