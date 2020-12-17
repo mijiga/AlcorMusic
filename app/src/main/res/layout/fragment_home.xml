@@ -17,6 +17,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
                 android:text="@string/app_name"
                 android:textColor="@color/colorPrimaryText"
                 android:textSize="20sp"
@@ -24,8 +25,8 @@
 
             <ImageView
                 android:id="@+id/search"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/ic_search"
@@ -66,6 +67,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Eli Njuchi"/>
             </LinearLayout>
 
@@ -96,6 +98,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Eli Njuchi"/>
             </LinearLayout>
 

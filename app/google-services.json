@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "270578222760",
+    "firebase_url": "https://alcor-87d33.firebaseio.com",
+    "project_id": "alcor-87d33",
+    "storage_bucket": "alcor-87d33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270578222760:android:b14c37398242c2da43a49d",
+        "android_client_info": {
+          "package_name": "com.alcor.finance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270578222760-8s28r2hlaeosnsctr9m3pn00d5uoqleu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alcor.finance",
+            "certificate_hash": "d78e3d0ecca2d0fa8c48a3e2c85c98f727388923"
+          }
+        },
+        {
+          "client_id": "270578222760-nj0031gtnqbjplbv4n402jj317mp9mrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl4OUICiETQMMevHW1_2vRln3XqAS9Ers"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270578222760-nj0031gtnqbjplbv4n402jj317mp9mrd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "270578222760-tefuikg2k8kde3svdu89dvccnmmkhmpo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alcor.malawi.mobilemoney"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270578222760:android:0469b2c72f55dfc1",
+        "android_client_info": {
+          "package_name": "com.alcor.malawi.mobilemoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270578222760-h4s5t5cts2m3pgpvjoi1j7k0l8bejl3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alcor.malawi.mobilemoney",
+            "certificate_hash": "59b83324cce4da04e097580ab08a46c61d414fb8"
+          }
+        },
+        {
+          "client_id": "270578222760-nj0031gtnqbjplbv4n402jj317mp9mrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl4OUICiETQMMevHW1_2vRln3XqAS9Ers"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270578222760-nj0031gtnqbjplbv4n402jj317mp9mrd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "270578222760-tefuikg2k8kde3svdu89dvccnmmkhmpo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alcor.malawi.mobilemoney"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270578222760:android:560493a89f32a56043a49d",
+        "android_client_info": {
+          "package_name": "com.alcor.music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270578222760-nj0031gtnqbjplbv4n402jj317mp9mrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl4OUICiETQMMevHW1_2vRln3XqAS9Ers"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270578222760-nj0031gtnqbjplbv4n402jj317mp9mrd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "270578222760-tefuikg2k8kde3svdu89dvccnmmkhmpo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alcor.malawi.mobilemoney"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
