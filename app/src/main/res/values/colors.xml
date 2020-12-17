@@ -7,6 +7,7 @@
     <color name="colorSecondaryDark">#f653a6</color>
     <color name="colorPageBackground">#f5f8ff</color>
     <color name="colorPrimaryText">#040c17</color>
+    <color name="colorAccent">#f653a6</color>
     <color name="rippleColor">#80F653A6</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
