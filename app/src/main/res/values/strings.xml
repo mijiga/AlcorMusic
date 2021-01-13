@@ -26,5 +26,13 @@
         <item>Mo626 - National Bank</item>
         <!--item>NBS - EazyBank</item-->
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account">Account</string>
+    <string name="steve_chikwiri">Steve Chikwiri</string>
+    <string name="schikwiri">schikwiri</string>
+    <string name="kyc_details">KYC</string>
+    <string name="logout">Logout</string>
+    <string name="about">About</string>
 
 </resources>
