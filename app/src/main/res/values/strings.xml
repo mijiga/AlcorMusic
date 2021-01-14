@@ -34,5 +34,6 @@
     <string name="kyc_details">KYC</string>
     <string name="logout">Logout</string>
     <string name="about">About</string>
+    <string name="your_projects">My Projects</string>
 
 </resources>
