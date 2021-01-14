@@ -28,4 +28,8 @@
         android:name="com.alcor.music.ui.itemdetails.ItemDetailsFragment"
         android:label=""
         tools:layout="@layout/fragment_item_details" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.alcor.music.ui.account.AccountFragment"
+        android:label="AccountFragment" />
 </navigation>

@@ -42,7 +42,7 @@ public class HomeFragment extends Fragment {
         });
 
         binding.search.setOnClickListener(v -> {
-            addData();
+            //addData();
         });
 
         return binding.getRoot();
