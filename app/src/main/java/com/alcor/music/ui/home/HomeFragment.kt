@@ -32,12 +32,14 @@ class HomeFragment : Fragment() {
         setupViews()
     }
 
-    fun setupViews(){
+    private fun setupViews(){
         search.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.searchFragment)
         }
 
+        //---Setup adapter start
         adapter = AlbumAdapter()
+        adapter.setOnItemClickListener { view, position, album ->  }
         recycler.layoutManager = GridLayoutManager(context, 2)
         recycler.adapter = adapter
 
@@ -47,6 +49,8 @@ class HomeFragment : Fragment() {
             adapter.list = it
             adapter.notifyDataSetChanged()
         })
+        //---Setup adapter end
+
     }
 
     fun addData() {
