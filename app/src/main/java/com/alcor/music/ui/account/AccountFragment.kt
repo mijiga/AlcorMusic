@@ -28,7 +28,7 @@ class AccountFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         projects.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.projectsFragment);
+            Navigation.findNavController(it).navigate(R.id.navigation_projects);
         }
 
     }

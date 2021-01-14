@@ -9,11 +9,16 @@
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_projects"
+        android:icon="@drawable/ic_album"
+        app:labelVisibilityMode="unlabeled"
+        android:title="@string/projects" />
+
+    <item
+        android:id="@+id/navigation_account"
         android:icon="@drawable/ic_account"
         app:labelVisibilityMode="unlabeled"
         android:title="@string/title_account" />
-
 
     <item
         android:id="@+id/navigation_notifications"

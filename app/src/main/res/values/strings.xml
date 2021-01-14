@@ -35,5 +35,6 @@
     <string name="logout">Logout</string>
     <string name="about">About</string>
     <string name="your_projects">My Projects</string>
+    <string name="projects">Projects</string>
 
 </resources>
