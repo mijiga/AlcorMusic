@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:padding="16dp"
         android:orientation="vertical"
-        tools:context=".ui.dashboard.AccountFragment">
+        tools:context=".ui.account.AccountFragment">
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"

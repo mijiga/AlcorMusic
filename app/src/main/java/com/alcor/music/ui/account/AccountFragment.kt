@@ -1,4 +1,4 @@
-package com.alcor.music.ui.dashboard
+package com.alcor.music.ui.account
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -30,6 +30,6 @@ class AccountFragment : Fragment() {
         projects.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.projectsFragment);
         }
-        
+
     }
 }
