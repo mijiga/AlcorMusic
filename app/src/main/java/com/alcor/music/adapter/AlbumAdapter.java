@@ -1,14 +1,18 @@
-package com.alcor.music.ui.adapter;
+package com.alcor.music.adapter;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alcor.music.R;
+import com.alcor.music.helper.GlideApp;
 import com.alcor.music.model.Album;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -24,6 +28,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.ViewHolder> 
     public ArrayList<Album> list = new ArrayList<>();
     private Context context;
     private onItemClickListener mItemClickListener;
+    FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
 
     public AlbumAdapter() {
 
@@ -50,16 +55,24 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.ViewHolder> 
 
         holder.titleView.setText(album.getName());
         holder.subTextView.setText(album.getArtistName());
+        StorageReference imageRef = firebaseStorage.getReferenceFromUrl(album.getThumbnail());
+        System.out.println("the image ref"+imageRef);
+        GlideApp.with(context)
+                .load(imageRef)
+                .into(holder.imageView);
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView titleView;
         TextView subTextView;
+        ImageView imageView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
             titleView = itemView.findViewById(R.id.title);
             subTextView = itemView.findViewById(R.id.subText);
+            imageView = itemView.findViewById(R.id.imageView);
         }
 
         @Override

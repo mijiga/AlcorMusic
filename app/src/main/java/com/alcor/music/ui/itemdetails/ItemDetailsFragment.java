@@ -8,11 +8,14 @@ import android.view.ViewGroup;
 import com.alcor.music.R;
 import com.alcor.music.databinding.ActivityCheckoutBinding;
 import com.alcor.music.databinding.FragmentItemDetailsBinding;
+import com.alcor.music.helper.GlideApp;
 import com.alcor.music.model.Album;
 import com.alcor.music.model.Track;
-import com.alcor.music.ui.adapter.TracksAdapter;
+import com.alcor.music.adapter.TracksAdapter;
 import com.alcor.music.ui.viewmodel.TrackListViewModel;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -32,6 +35,7 @@ public class ItemDetailsFragment extends Fragment {
     Album album;
     Gson gson = new Gson();
     TrackListViewModel trackListViewModel;
+    FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,7 +46,6 @@ public class ItemDetailsFragment extends Fragment {
         if(bundleStr != null && !bundleStr.isEmpty()){
             album = gson.fromJson(bundleStr, Album.class);
         }
-
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -62,6 +65,12 @@ public class ItemDetailsFragment extends Fragment {
     private void setUpViews(Album album){
         binding.title.setText(album.getName());
         binding.buy.setOnClickListener(v -> createPaymentDialog(album.getName(), album.getPrice(), album.getAlbumID()).show());
+
+        StorageReference imageRef = firebaseStorage.getReferenceFromUrl(album.getThumbnail());
+        System.out.println("the image ref"+imageRef);
+        GlideApp.with(getContext())
+                .load(imageRef)
+                .into(binding.thumbnail);
     }
 
     private void setupTrackList(int criteria, String value){

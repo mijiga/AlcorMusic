@@ -1,4 +1,4 @@
-package com.alcor.music.ui.adapter;
+package com.alcor.music.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
